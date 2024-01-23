@@ -6,7 +6,7 @@
 
 int main() {
     int first=1;
-    int second=10;
+    int second=10000;
     // printf("Enter first number: ");
     // scanf("%d", &first);
     // printf("Enter second number: ");
@@ -19,12 +19,7 @@ int main() {
         }
     }
 
-    printf("\nthe Prime numbers are: ");
-    for (int i = first; i <= second; i++) {
-        if (isPrime(i) == 1) {
-            printf("%d ", i);
-        }
-    }
+   
 
     printf("\nthe Palindrome numbers are: ");
     for (int i = first; i <= second; i++) {
@@ -32,7 +27,12 @@ int main() {
             printf("%d ", i);
         }
     }
-
+ printf("\nthe Prime numbers are: ");
+    for (int i = first; i <= second; i++) {
+        if (isPrime(i) == 1) {
+            printf("%d ", i);
+        }
+    }
 
 
     printf("\nthe Strong numbers are: ");
