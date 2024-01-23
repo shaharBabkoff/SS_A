@@ -5,28 +5,28 @@
 //#include "advancedClassificationRecursion.c"
 
 int main() {
-    int first;
-    int second;
+    int first=1;
+    int second=10;
     // printf("Enter first number: ");
     // scanf("%d", &first);
     // printf("Enter second number: ");
     // scanf("%d", &second);
 
-        printf("the Armstrong numbers are:");
+        printf("the Armstrong numbers are: ");
     for (int i = first; i <= second; i++) {
         if (isArmstrong(i) == 1) {
             printf("%d ", i);
         }
     }
 
-    printf("\nthe Prime numbers are:");
+    printf("\nthe Prime numbers are: ");
     for (int i = first; i <= second; i++) {
         if (isPrime(i) == 1) {
             printf("%d ", i);
         }
     }
 
-    printf("\nthe Palindrome numbers are:");
+    printf("\nthe Palindrome numbers are: ");
     for (int i = first; i <= second; i++) {
         if (isPalindrome(i) == 1) {
             printf("%d ", i);
@@ -35,7 +35,7 @@ int main() {
 
 
 
-    printf("\nthe Strong numbers are:");
+    printf("\nthe Strong numbers are: ");
     for (int i = first; i <= second; i++) {
         if (isStrong(i) == 1) {
             printf("%d ", i);
