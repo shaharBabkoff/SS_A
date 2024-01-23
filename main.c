@@ -8,10 +8,10 @@ int main() {
     int first;
     int second;
 
-    printf("Enter first number: ");
-    scanf("%d", &first);
-    printf("Enter second number: ");
-    scanf("%d", &second);
+    // printf("Enter first number: ");
+    // scanf("%d", &first);
+    // printf("Enter second number: ");
+    // scanf("%d", &second);
 
         printf("\nthe Armstrong numbers are:");
     for (int i = first; i <= second; i++) {
