@@ -12,7 +12,7 @@ maindrec: main.o libclassrec.so
 loops:libclassloops.a 
 libclassloops.a :advancedClassificationLoop.o basicClassification.o
 	ar -rc libclassloops.a advancedClassificationLoop.o basicClassification.o
-recursive: libclassrec.a
+recursives: libclassrec.a
 libclassrec.a:advancedClassificationRecursion.o basicClassification.o
 	ar -rc libclassrec.a advancedClassificationRecursion.o basicClassification.o
 recursived:libclassrec.so
@@ -31,6 +31,6 @@ main.o: main.c NumClass.h
 	$(CC) $(FLAGS) -c main.c
 .PHONY: clean all
 clean:
-	 rm -f *.o *.a *.so mains maindloop maindrec
+	rm -f *.o *.a *.so mains maindloop maindrec
 
 
