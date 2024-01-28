@@ -22,11 +22,11 @@ loopd:libclassloops.so
 libclassloops.so: advancedClassificationLoop.o basicClassification.o
 	$(CC) -shared -o libclassloops.so advancedClassificationLoop.o basicClassification.o
 advancedClassificationLoop.o: advancedClassificationLoop.c NumClass.h
-	$(CC) -c advancedClassificationLoop.c
+	$(CC) -Wall -fPIC -c advancedClassificationLoop.c
 advancedClassificationRecursion.o: advancedClassificationRecursion.c NumClass.h
-	$(CC) -c advancedClassificationRecursion.c
+	$(CC) -Wall -fPIC -c advancedClassificationRecursion.c
 basicClassification.o: basicClassification.c NumClass.h
-	$(CC) -c basicClassification.c
+	$(CC) -Wall -fPIC -c basicClassification.c
 main.o: main.c NumClass.h 
 	$(CC) $(FLAGS) -c main.c
 .PHONY: clean all
